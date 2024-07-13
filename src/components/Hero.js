@@ -9,7 +9,7 @@ export default function Hero() {
         src={HeroPic}
         className="w-full h-auto aspect-auto"
         alt="Hero Section Image Of Car"
-        quality={80}
+        quality={100}
         fill
         priority
       />

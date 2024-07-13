@@ -90,6 +90,19 @@ export default function Gallery({ items }) {
       }
       onMouseDown={() => setMouseDown(true)}
       onMouseUp={() => setMouseDown(false)}
+      onTouchMove={(event) =>
+        handleMouseDown(
+          event,
+          previousMouseX,
+          setPreviousMouseX,
+          galleryX,
+          setGalleryX,
+          setMouseDown,
+          width,
+          setWidth,
+          items.length
+        )
+      }
       className={`${
         mouseDown ? `cursor-grabbing` : `cursor-grab`
       } gallery-window relative`}

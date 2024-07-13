@@ -9,7 +9,7 @@ export default function GalleryPhoto({ picture, pictureAlt }) {
         src={picture}
         alt={pictureAlt}
         fill
-        quality={80}
+        quality={100}
         sizes="(max-width: 768px) 240px"
         loading="lazy"
       />

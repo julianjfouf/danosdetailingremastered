@@ -19,7 +19,7 @@ export default function Review({
             alt={avatarAlt}
             height={32}
             width={32}
-            quality={80}
+            quality={100}
             loading="lazy"
           />
           <div className="flex flex-col gap-1">
@@ -43,7 +43,7 @@ export default function Review({
           alt={pictureAlt}
           width={480}
           height={360}
-          quality={80}
+          quality={100}
           loading="lazy"
         />
       </div>
@@ -52,7 +52,7 @@ export default function Review({
         alt="Google Logo"
         width={16}
         height={16}
-        quality={80}
+        quality={100}
         loading="lazy"
         className="absolute top-6 right-6"
       />

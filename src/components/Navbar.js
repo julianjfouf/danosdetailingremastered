@@ -18,7 +18,7 @@ export default function Navbar() {
           className="aspect-auto"
           src={Logo}
           alt="Dano's Detailing Logo"
-          quality={80}
+          quality={100}
           priority
         />
       </Link>

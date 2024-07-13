@@ -20,7 +20,7 @@ export default function ServiceCard({
         src={picture}
         alt={pictureAlt}
         fill
-        quality={80}
+        quality={100}
         priority
         className="z-[-1]"
       />
