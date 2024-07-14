@@ -16,7 +16,9 @@ export default function LoadingScreen() {
       <Image
         src={Logo}
         alt="Loading Screen Logo"
-        className="loading-logo opacity-0 duration-300 w-auto h-auto"
+        className="loading-logo opacity-0 duration-300"
+        width={100}
+        height={61}
       />
     </div>
   );
