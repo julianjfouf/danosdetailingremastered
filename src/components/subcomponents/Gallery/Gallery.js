@@ -92,7 +92,7 @@ export default function Gallery({ items }) {
       onMouseUp={() => setMouseDown(false)}
       className={`${
         mouseDown ? `cursor-grabbing` : `cursor-grab`
-      } gallery-window relative`}
+      } gallery-window relative overflow-x-hidden`}
     >
       <div className="bg-[#621F23] h-[100px] -left-6 w-screen absolute top-1/2 -translate-y-1/2"></div>
       <div
