@@ -14,15 +14,13 @@ function handleMouseDown(
   setWidth,
   items_length
 ) {
+  console.log("hi");
   if (event.buttons === 1 || event.pointerType === "touch") {
     if (previousMouseX == -100) {
       setPreviousMouseX(event.pageX);
     }
-    if (event.pointerType == "touch" && (event.pageX - previousMouseX > 5 || event.pageX - previousMouseX < -5)) {
-      setPreviousMouseX(event.pageX);
-    }
     setGalleryX((prev) =>
-      handleGallerySlide(
+      handleGallerySlideMouse(
         prev,
         event,
         previousMouseX,
@@ -36,7 +34,35 @@ function handleMouseDown(
   return;
 }
 
-function handleGallerySlide(
+function handleTouchMove(
+  event,
+  previousMouseX,
+  setPreviousMouseX,
+  galleryX,
+  setGalleryX,
+  setMouseDown,
+  width,
+  setWidth,
+  items_length
+) {
+  console.log(event);
+  if (previousMouseX == -100) {
+    setPreviousMouseX(event.changedTouches[0].pageX);
+  }
+  setGalleryX((prev) =>
+    handleGallerySlideTouch(
+      prev,
+      event,
+      previousMouseX,
+      width,
+      setWidth,
+      items_length
+    )
+  );
+  setPreviousMouseX(event.changedTouches[0].pageX);
+}
+
+function handleGallerySlideMouse(
   prev,
   event,
   previousMouseX,
@@ -53,6 +79,26 @@ function handleGallerySlide(
     return width + 24 + 17 - (event.view.innerWidth - 24);
   } else {
     return prev - (event.pageX - previousMouseX);
+  }
+}
+
+function handleGallerySlideTouch(
+  prev,
+  event,
+  previousMouseX,
+  width,
+  setWidth,
+  items_length
+) {
+  if (prev - (event.changedTouches[0].pageX - previousMouseX) < 0) {
+    return 0;
+  } else if (
+    prev - (event.changedTouches[0].pageX - previousMouseX) >
+    width + 24 + 17 - (event.view.innerWidth - 24)
+  ) {
+    return width + 24 + 17 - (event.view.innerWidth - 24);
+  } else {
+    return prev - (event.changedTouches[0].pageX - previousMouseX);
   }
 }
 
@@ -78,8 +124,22 @@ export default function Gallery({ items }) {
 
   return (
     <div
-      onPointerMove={(event) =>
+      onMouseMove={(event) =>
         handleMouseDown(
+          event,
+          previousMouseX,
+          setPreviousMouseX,
+          galleryX,
+          setGalleryX,
+          setMouseDown,
+          width,
+          setWidth,
+          items.length
+        )
+      }
+      onTouchStart={(event) => setPreviousMouseX(event.changedTouches[0].pageX)}
+      onTouchMove={(event) =>
+        handleTouchMove(
           event,
           previousMouseX,
           setPreviousMouseX,
