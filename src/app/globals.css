@@ -9,10 +9,6 @@
   scroll-behavior: smooth;
 }
 
-/* *::-webkit-scrollbar {
-  display: none;
-} */
-
 .button:hover {
   stroke-dashoffset: 0;
 }

@@ -26,7 +26,7 @@ export default function ServiceCard({
       />
       <div className="bg-black/50 p-6 w-full h-full flex items-center justify-center">
         <div className="w-full flex flex-col justify-center items-start gap-4 pl-4 border-l-8 border-l-[#621F23]">
-          <Title text={title} args="font-bold" />
+          <Title text={title} args="font-bold lg:text-4xl" />
           <Paragraph text={description} />
           <Button text="LEARN MORE" />
         </div>

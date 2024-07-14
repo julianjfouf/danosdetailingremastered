@@ -5,10 +5,9 @@ import Image from "next/image";
 
 export default function Service({ service }) {
   return (
-    <section className="max-w-3xl mx-auto">
-      <div className="flex p-6">
-        <div className="min-h-full min-w-2 bg-[#621f23]"></div>
-        <div className="pl-2 flex flex-col gap-2">
+    <section className="max-w-3xl mx-auto xl:max-w-none xl:grid xl:grid-cols-3 xl:p-12">
+      <div className="flex p-6 xl:p-0 xl:items-start">
+        <div className="pl-2 flex flex-col gap-2 border-l-8 border-l-[#621f23]">
           <Title text={information[service]?.title} />
           <Paragraph text={information[service]?.description} />
         </div>
@@ -61,10 +60,12 @@ export default function Service({ service }) {
           </div>
         ))}
       </div>
-      <div className="p-6 flex gap-2">
-        <div className="min-h-full min-w-2 bg-[#621F23]"></div>
-        <div>
-          <Paragraph text={information[service]?.benefitsTitle} args="font-medium" />
+      <div className="p-6 flex gap-2 xl:p-0 xl:items-start">
+        <div className="border-l-8 border-l-[#621f23] pl-2">
+          <Paragraph
+            text={information[service]?.benefitsTitle}
+            args="font-medium"
+          />
           <ul className="list-disc pl-8">
             {information[service]?.benefits.map((benefit, id) => (
               <li key={id}>

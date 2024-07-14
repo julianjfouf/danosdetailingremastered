@@ -6,7 +6,7 @@ import information from "./subcomponents/Information/PortfolioInformation";
 
 export default function Portfolio() {
   return (
-    <section className="p-6">
+    <section className="p-6 xl:p-12">
       <div className="flex flex-col w-full items-center pb-4 text-center font-medium">
         <Title text="Our Portfolio" />
         <Paragraph text="Take a look through our long history of great client results." />

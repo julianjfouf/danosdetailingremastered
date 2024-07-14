@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="bg-black p-6 pb-36 text-white">
-      <div className="flex flex-col gap-8 max-w-3xl mx-auto">
+    <section className="bg-black p-6 xl:p-12 xl:pb-36 pb-36 text-white">
+      <div className="flex flex-col gap-8">
         <Title text="Dano's Detailing" args="font-medium" />
-        <div className="flex flex-wrap gap-8">
+        <div className="flex flex-wrap gap-8 xl:gap-0 xl:justify-between xl:w-full">
           {information.map((section, id) => (
             <div key={id} className="flex flex-col gap-2">
               <Paragraph text={section.title} args="font-bold mb-1" />

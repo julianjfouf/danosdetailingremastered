@@ -1,0 +1,14 @@
+{
+    "name": "Dano's Detailing | Car Detailing in Tracy, CA",
+    "short_name": "Dano's Detailing",
+    "description": "The official Dano's Detailing website for all the information you need about car detailing services and packages offered in Tracy, CA.",
+    "start_url": "/",
+    "display": "browser",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "any",
+            "type": "image/png"
+        }
+    ]
+}
