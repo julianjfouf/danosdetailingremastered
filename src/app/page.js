@@ -18,16 +18,16 @@ export const metadata = {
     "Car Exterior Detailing",
     "Car Interior Detailing",
   ],
-  manifest: "https://danosdetailing.vercel.app/manifest.json",
+  manifest: "https://danosdetailingremastered.vercel.app/manifest.json",
   openGraph: {
     title: "Dano's Detailing | Car Detailing in Tracy, CA",
     description:
       "The official Dano's Detailing website for all the information you need about car detailing services and packages offered in Tracy, CA.",
-    url: "https://danosdetailing.vercel.app",
+    url: "https://danosdetailingremastered.vercel.app",
     siteName: "Dano's Detailing | Car Detailing in Tracy, CA",
     images: [
       {
-        url: "https://danosdetailing.vercel.app/icons/danosdetailingicon.png",
+        url: "https://danosdetailingremastered.vercel.app/icons/danosdetailingicon.png",
       },
     ],
     locale: "en_US",
@@ -39,7 +39,7 @@ export const metadata = {
     description:
       "The official Dano's Detailing website for all the information you need about car detailing services and packages offered in Tracy, CA.",
     images: {
-      url: "https://danosdetailing.vercel.app/icons/danosdetailingicon.png",
+      url: "https://danosdetailingremastered.vercel.app/icons/danosdetailingicon.png",
     },
   },
 };
