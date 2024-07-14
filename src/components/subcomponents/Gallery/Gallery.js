@@ -14,7 +14,7 @@ function handleMouseDown(
   setWidth,
   items_length
 ) {
-  if (event.nativeEvent.which == 1) {
+  if (event.buttons === 1 || event.pointerType === "touch") {
     if (previousMouseX == -100) {
       setPreviousMouseX(event.pageX);
     }
@@ -75,7 +75,7 @@ export default function Gallery({ items }) {
 
   return (
     <div
-      onMouseMove={(event) =>
+      onPointerMove={(event) =>
         handleMouseDown(
           event,
           previousMouseX,
@@ -90,22 +90,9 @@ export default function Gallery({ items }) {
       }
       onMouseDown={() => setMouseDown(true)}
       onMouseUp={() => setMouseDown(false)}
-      onTouchMove={(event) =>
-        handleMouseDown(
-          event,
-          previousMouseX,
-          setPreviousMouseX,
-          galleryX,
-          setGalleryX,
-          setMouseDown,
-          width,
-          setWidth,
-          items.length
-        )
-      }
       className={`${
         mouseDown ? `cursor-grabbing` : `cursor-grab`
-      } gallery-window relative overflow-x-hidden`}
+      } gallery-window relative`}
     >
       <div className="bg-[#621F23] h-[100px] -left-6 w-screen absolute top-1/2 -translate-y-1/2"></div>
       <div
