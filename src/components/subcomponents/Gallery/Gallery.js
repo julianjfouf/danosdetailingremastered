@@ -18,6 +18,9 @@ function handleMouseDown(
     if (previousMouseX == -100) {
       setPreviousMouseX(event.pageX);
     }
+    if (event.pointerType == "touch" && event.pageX - previousMouseX > 5) {
+      setPreviousMouseX(event.pageX);
+    }
     setGalleryX((prev) =>
       handleGallerySlide(
         prev,
