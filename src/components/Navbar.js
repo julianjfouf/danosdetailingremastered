@@ -15,7 +15,7 @@ export default function Navbar() {
       <Menu showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
       <Link href="/">
         <Image
-          className="aspect-auto"
+          className="aspect-auto w-[61px] h-[100px]"
           src={Logo}
           alt="Dano's Detailing Logo"
           quality={100}
