@@ -90,15 +90,15 @@ function handleGallerySlideTouch(
   setWidth,
   items_length
 ) {
-  if (prev - (event.changedTouches[0].pageX - previousMouseX) < 0) {
+  if (prev - 2 * (event.changedTouches[0].pageX - previousMouseX) < 0) {
     return 0;
   } else if (
-    prev - (event.changedTouches[0].pageX - previousMouseX) >
-    width + 24 + 17 - (event.view.innerWidth - 24)
+    prev - 2 * (event.changedTouches[0].pageX - previousMouseX) >
+    width + 24 - (event.view.innerWidth - 24)
   ) {
-    return width + 24 + 17 - (event.view.innerWidth - 24);
+    return width + 24 - (event.view.innerWidth - 24);
   } else {
-    return prev - (event.changedTouches[0].pageX - previousMouseX);
+    return prev - 2 * (event.changedTouches[0].pageX - previousMouseX);
   }
 }
 
