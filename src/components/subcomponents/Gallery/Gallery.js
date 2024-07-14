@@ -14,7 +14,6 @@ function handleMouseDown(
   setWidth,
   items_length
 ) {
-  console.log("hi");
   if (event.buttons === 1 || event.pointerType === "touch") {
     if (previousMouseX == -100) {
       setPreviousMouseX(event.pageX);
@@ -45,7 +44,6 @@ function handleTouchMove(
   setWidth,
   items_length
 ) {
-  console.log(event);
   if (previousMouseX == -100) {
     setPreviousMouseX(event.changedTouches[0].pageX);
   }
