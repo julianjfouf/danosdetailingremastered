@@ -214,6 +214,8 @@ export default function Gallery({ items }) {
   const [translateInterval, setTranslateInterval] = useState(0);
   const [initialX, setInitialX] = useState(0);
   const [pointerDown, setPointerDown] = useState(false);
+  const [timeSinceLastScroll, setTimeSinceLastScroll] = useState(0);
+  const [timerId, setTimerId] = useState();
   useEffect(() => {
     const window = document.querySelector(
       "." +
@@ -221,10 +223,19 @@ export default function Gallery({ items }) {
           items[0].props.className.split(" ").length - 1
         ]
     );
-    console.log(window.getBoundingClientRect().width / 2);
     setItemWidth(window.getBoundingClientRect().width / 2);
     setTranslateInterval(itemWidth * 2 + 8);
   }, [itemWidth]);
+
+  useEffect(() => {
+    clearTimeout(timerId);
+    setTimerId(
+      setTimeout(() => {
+        setCurrentItem((prev) => (prev + 1) % items.length);
+      }, 5000)
+    );
+  }, [currentItem]);
+
   return (
     <div
       className={`flex flex-col items-center w-full overflow-hidden relative ${

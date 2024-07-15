@@ -6,10 +6,11 @@ export default function Logo({ image }) {
       src={image.src}
       alt={image.alt}
       width={image.width}
-      height={image.height}
-      priority={100}
+      height={12}
+      priority={true}
+      quality={100}
       loading="eager"
-      className={`aspect-auto object-contain w-full min-h-3`}
+      className={`aspect-auto object-contain w-full min-h-3 max-h-3 h-3`}
     ></Image>
   );
 }
