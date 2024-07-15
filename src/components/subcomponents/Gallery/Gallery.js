@@ -214,7 +214,6 @@ export default function Gallery({ items }) {
   const [translateInterval, setTranslateInterval] = useState(0);
   const [initialX, setInitialX] = useState(0);
   const [pointerDown, setPointerDown] = useState(false);
-  const [timeSinceLastScroll, setTimeSinceLastScroll] = useState(0);
   const [timerId, setTimerId] = useState();
   useEffect(() => {
     const window = document.querySelector(
