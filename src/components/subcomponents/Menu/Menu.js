@@ -1,3 +1,4 @@
+import Paragraph from "../Text/Paragraph";
 import MenuLink from "./MenuLink";
 
 export default function Menu({ showMenu, toggleShowMenu }) {
@@ -32,6 +33,14 @@ export default function Menu({ showMenu, toggleShowMenu }) {
         <div className="bg-white w-full h-[1px] mt-4"></div>
         <div className="absolute left-0 bottom-6 w-full px-6 flex flex-col gap-6">
           <div className="w-full bg-white h-[1px]"></div>
+          <div className="flex flex-col gap-2">
+            <a href="tel:2092789098">
+              <Paragraph text="(209) 278-9098" />
+            </a>
+            <a href="mailto:danosmobiledetailing@gmail.com">
+              <Paragraph text="danosmobiedetailing@gmail.com" />
+            </a>
+          </div>
           <div className="flex">
             <div className="flex gap-3">
               <a

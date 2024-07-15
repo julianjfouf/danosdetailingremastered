@@ -80,4 +80,19 @@ export default [
       },
     ],
   },
+  {
+    title: "Contact Details",
+    items: [
+        {
+            item: "(209) 278-9098",
+            href: "",
+            link: false,
+        },
+        {
+            item: "danosmobiledetailing@gmail.com",
+            href: "",
+            link: false,
+        }
+    ]
+  }
 ];
