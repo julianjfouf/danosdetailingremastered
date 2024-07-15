@@ -5,8 +5,8 @@ import Title from "./subcomponents/Text/Title";
 
 export default function FAQs({ service }) {
   return (
-    <div className="p-6 xl:p-12 max-w-3xl mx-auto xl:flex xl:max-w-none">
-      <div className="flex flex-col w-full items-center pb-4 text-center font-medium xl:text-left xl:items-start">
+    <div className="p-6 xl:p-12 max-w-3xl mx-auto xl:max-w-7xl">
+      <div className="flex flex-col w-full items-center pb-4 text-center font-medium">
         <Title text="FAQ" />
         <Paragraph text="The questions we commonly get from customers." />
       </div>

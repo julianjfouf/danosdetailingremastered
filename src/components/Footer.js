@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="bg-black p-6 xl:p-12 xl:pb-36 pb-36 text-white">
-      <div className="flex flex-col gap-8">
+    <section className="bg-black p-6 xl:pt-0 xl:pl-0 xl:pr-0 xl:pb-24 pb-36 text-white">
+      <div className="flex flex-col gap-8 xl:max-w-7xl xl:mx-auto xl:p-12">
         <Title text="Dano's Detailing" args="font-medium" />
         <div className="flex flex-wrap gap-8 xl:gap-0 xl:justify-between xl:w-full">
           {information.map((section, id) => (
