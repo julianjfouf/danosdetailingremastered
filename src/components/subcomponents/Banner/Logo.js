@@ -7,7 +7,8 @@ export default function Logo({ image }) {
       alt={image.alt}
       width={image.width}
       height={image.height}
-      priority
+      priority={100}
+      loading="eager"
       className={`aspect-auto object-contain w-full min-h-3`}
     ></Image>
   );
