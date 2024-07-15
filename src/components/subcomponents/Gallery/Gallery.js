@@ -189,7 +189,7 @@ function handleMouseUp(event, initialX, setCurrentItem, items_length) {
 }
 
 function handleTouchEnd(event, initialX, setCurrentItem, items_length) {
-  if (event.changedTouches[0].pageX - initialX < 0) {
+  if (event.changedTouches[0].pageX - initialX < -15) {
     setCurrentItem((prev) => {
       if (prev < items_length - 1) {
         return prev + 1;
@@ -197,7 +197,7 @@ function handleTouchEnd(event, initialX, setCurrentItem, items_length) {
         return prev;
       }
     });
-  } else if (event.changedTouches[0].pageX - initialX > 0) {
+  } else if (event.changedTouches[0].pageX - initialX > 15) {
     setCurrentItem((prev) => {
       if (prev > 0) {
         return prev - 1;
