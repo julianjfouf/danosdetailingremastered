@@ -7,12 +7,7 @@ export const metadata = {
     "The official page for all the information you need about ceramic coating services and packages offered in Tracy, CA.",
   applicationName: "Ceramic Coating | Car Detailing in Tracy, CA",
   keywords: [
-    "Car Detailing",
-    "Ceramic Coating",
-    "Paint Correction",
-    "Wash & Wax",
-    "Car Exterior Detailing",
-    "Car Interior Detailing",
+    "Ceramic Coating in Tracy",
   ],
   manifest: "https://danosdetailingremastered.vercel.app/manifest.json",
   openGraph: {

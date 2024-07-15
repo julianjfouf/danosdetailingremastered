@@ -2,10 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-function handleMouseUp(event, initialX, setCurrentItem, items_length) {
-  console.log("hi");
-  console.log(initialX, event.pageX);
-  if (event.pageX - initialX < 0) {
+function handlePointerUp(finalX, initialX, setCurrentItem, items_length) {
+  if (finalX - initialX < 0) {
     setCurrentItem((prev) => {
       if (prev < items_length - 1) {
         return prev + 1;
@@ -13,27 +11,7 @@ function handleMouseUp(event, initialX, setCurrentItem, items_length) {
         return prev;
       }
     });
-  } else if (event.pageX - initialX > 0) {
-    setCurrentItem((prev) => {
-      if (prev > 0) {
-        return prev - 1;
-      } else {
-        return prev;
-      }
-    });
-  }
-}
-
-function handleTouchEnd(event, initialX, setCurrentItem, items_length) {
-  if (event.changedTouches[0].pageX - initialX < -15) {
-    setCurrentItem((prev) => {
-      if (prev < items_length - 1) {
-        return prev + 1;
-      } else {
-        return prev;
-      }
-    });
-  } else if (event.changedTouches[0].pageX - initialX > 15) {
+  } else if (finalX - initialX > 0) {
     setCurrentItem((prev) => {
       if (prev > 0) {
         return prev - 1;
@@ -81,7 +59,7 @@ export default function Gallery({ items }) {
         setPointerDown(true);
       }}
       onMouseUp={(event) => {
-        handleMouseUp(event, initialX, setCurrentItem, items.length);
+        handlePointerUp(event.pageX, initialX, setCurrentItem, items.length);
         setPointerDown(false);
       }}
       onTouchStart={(event) => {
@@ -89,7 +67,12 @@ export default function Gallery({ items }) {
         setPointerDown(true);
       }}
       onTouchEnd={(event) => {
-        handleTouchEnd(event, initialX, setCurrentItem, items.length);
+        handlePointerUp(
+          event.changedTouches[0].pageX,
+          initialX,
+          setCurrentItem,
+          items.length
+        );
         setPointerDown(false);
       }}
     >

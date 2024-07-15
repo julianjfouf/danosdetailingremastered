@@ -7,12 +7,7 @@ export const metadata = {
     "The official page for all the information you need about interior detailing services and packages offered in Tracy, CA.",
   applicationName: "Interior Detailing | Car Detailing in Tracy, CA",
   keywords: [
-    "Car Detailing",
-    "Ceramic Coating",
-    "Paint Correction",
-    "Wash & Wax",
-    "Car Exterior Detailing",
-    "Car Interior Detailing",
+    "Car Interior Detailing in Tracy",
   ],
   manifest: "https://danosdetailingremastered.vercel.app/manifest.json",
   openGraph: {
