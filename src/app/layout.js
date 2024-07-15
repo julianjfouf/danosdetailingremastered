@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <About />
         <Footer />
         <CallButton />
-        <div className="fixed bottom-0 left-0 right-0 w-full h-[128px] bg-gradient-to-b from-transparent to-black" />
+        <div className="fixed bottom-0 left-0 right-0 w-full h-[100px] bg-gradient-to-b from-transparent to-black" />
         <LoadingScreen />
       </body>
     </html>
