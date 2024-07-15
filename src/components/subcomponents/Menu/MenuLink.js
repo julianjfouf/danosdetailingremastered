@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Title from "../Text/Title";
-import Paragraph from "../Text/Paragraph";
 
 export default function MenuLink({ text, href, toggleShowMenu }) {
   return (

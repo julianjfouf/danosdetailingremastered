@@ -1,6 +1,4 @@
 import MenuLink from "./MenuLink";
-import Title from "../Text/Title";
-import Image from "next/image";
 
 export default function Menu({ showMenu, toggleShowMenu }) {
   return (

@@ -1,7 +1,4 @@
-import About from "@/components/About";
-import Gallery from "@/components/Portfolio";
 import Hero from "@/components/Hero";
-import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
 import SlidingBanner from "@/components/subcomponents/Banner/SlidingBanner";
 

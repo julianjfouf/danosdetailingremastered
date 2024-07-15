@@ -1,4 +1,3 @@
-import FAQ from "./subcomponents/FAQ";
 import Gallery from "./subcomponents/Gallery/Gallery";
 import information from "./subcomponents/Information/ReviewInformation";
 import Review from "./subcomponents/Review";
