@@ -1,31 +1,31 @@
 export default function sitemap() {
     return [
       {
-        url: 'https://danosdetailingremastered.vercel.app',
+        url: 'https://danosdetailing.com',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 1,
       },
       {
-        url: 'https://danosdetailingremastered.vercel.app/ceramic-coating',
+        url: 'https://danosdetailing.com/ceramic-coating',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 1,
       },
       {
-        url: 'https://danosdetailingremastered.vercel.app/paint-correction',
+        url: 'https://danosdetailing.com/paint-correction',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 1,
       },
       {
-        url: 'https://danosdetailingremastered.vercel.app/exterior-detailing',
+        url: 'https://danosdetailing.com/exterior-detailing',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 1,
       },
       {
-        url: 'https://danosdetailingremastered.vercel.app/interior-detailing',
+        url: 'https://danosdetailing.com/interior-detailing',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 1,
