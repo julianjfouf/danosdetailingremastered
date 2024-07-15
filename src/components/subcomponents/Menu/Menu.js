@@ -38,7 +38,7 @@ export default function Menu({ showMenu, toggleShowMenu }) {
               <Paragraph text="(209) 278-9098" />
             </a>
             <a href="mailto:danosmobiledetailing@gmail.com">
-              <Paragraph text="danosmobiedetailing@gmail.com" />
+              <Paragraph text="danosmobiledetailing@gmail.com" />
             </a>
           </div>
           <div className="flex">
