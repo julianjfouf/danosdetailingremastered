@@ -7,8 +7,8 @@ import Title from "./subcomponents/Text/Title";
 
 export default function Reviews() {
   return (
-    <section className="p-6 xl:p-12">
-      <div className="flex flex-col w-full items-center pb-4 text-center font-medium">
+    <section className="py-6 xl:py-12">
+      <div className="flex flex-col w-full items-center pb-4 text-center font-medium px-6 xl:px-12">
         <Title text="Testimonials" />
         <Paragraph text="With more than 30 5-Star Google Reviews, this is what our customers have to say." />
       </div>

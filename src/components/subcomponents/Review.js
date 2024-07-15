@@ -20,7 +20,7 @@ export default function Review({
             height={32}
             width={32}
             quality={100}
-            loading="lazy"
+            loading="eager"
           />
           <div className="flex flex-col gap-1">
             <Paragraph text={name} args="font-bold" />
