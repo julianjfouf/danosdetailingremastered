@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <SlidingBanner /> */}
+      <SlidingBanner />
       <Services />
     </>
   );

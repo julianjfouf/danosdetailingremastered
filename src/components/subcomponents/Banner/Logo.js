@@ -1,8 +1,8 @@
+import Image from "next/image";
 
-export default function Logo({ id }) {
+export default function Logo({ image }) {
     return (
-        <div on className="h-16 min-w-64 bg-white text-black">
-            {id}
-        </div>
+        <Image src={image.src} alt={image.alt} width={image.width} height={image.height} priority>
+        </Image>
     )
 }

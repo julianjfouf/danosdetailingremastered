@@ -9,6 +9,18 @@
   scroll-behavior: smooth;
 }
 
-.button:hover {
-  stroke-dashoffset: 0;
+.sliding-banner {
+  animation-duration: 10000ms;
+  animation-name: slideAnimation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slideAnimation {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-974px);
+  }
 }
