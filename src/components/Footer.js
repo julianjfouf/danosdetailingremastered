@@ -2,6 +2,7 @@ import Title from "./subcomponents/Text/Title";
 import information from "./subcomponents/Information/FooterInformation";
 import Paragraph from "./subcomponents/Text/Paragraph";
 import Link from "next/link";
+import FooterLink from "./subcomponents/FooterLink";
 
 export default function Footer() {
   return (
@@ -9,6 +10,25 @@ export default function Footer() {
       <div className="flex flex-col gap-8 xl:max-w-7xl xl:mx-auto xl:p-12">
         <Title text="Dano's Detailing" args="font-medium" />
         <div className="flex flex-wrap gap-8 xl:gap-0 xl:justify-between xl:w-full">
+          <div className="flex flex-col gap-2">
+            <Paragraph text={"Services"} args="font-bold mb-1" />
+            <FooterLink
+              service="Ceramic Coating"
+              serviceHref="/ceramic-coating"
+            />
+            <FooterLink
+              service="Paint Correction"
+              serviceHref="/paint-correction"
+            />
+            <FooterLink
+              service="Exterior Detailing"
+              serviceHref="/exterior-detailing"
+            />
+            <FooterLink
+              service="Interior Detailing"
+              serviceHref="/interior-detailing"
+            />
+          </div>
           {information.map((section, id) => (
             <div key={id} className="flex flex-col gap-2">
               <Paragraph text={section.title} args="font-bold mb-1" />

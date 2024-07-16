@@ -1,9 +1,8 @@
 import Paragraph from "./subcomponents/Text/Paragraph";
 import Title from "./subcomponents/Text/Title";
-import information from "./subcomponents/Information/ServiceInformation";
 import Image from "next/image";
 
-export default function Service({ service }) {
+export default function Service({ information, service }) {
   return (
     <section className="max-w-3xl mx-auto xl:max-w-7xl xl:p-12 xl:flex xl:w-full xl:justify-between xl:gap-12">
       <div className="flex p-6 xl:p-0 xl:items-start xl:w-1/2">

@@ -1,14 +1,14 @@
 import FAQs from "@/components/FAQs";
 import Service from "@/components/Service";
+import Serviceinformation from "../../components/subcomponents/Information/ServiceInformation";
+import FAQinformation from "../../components/subcomponents/Information/FAQInformation";
 
 export const metadata = {
   title: "Paint Correction | Car Detailing in Tracy, CA",
   description:
     "The official page for all the information you need about paint correction services and packages offered in Tracy, CA.",
   applicationName: "Paint Correction | Car Detailing in Tracy, CA",
-  keywords: [
-    "Paint Correction in Tracy",
-  ],
+  keywords: ["Paint Correction in Tracy"],
   manifest: "https://danosdetailing.com/manifest.json",
   openGraph: {
     title: "Paint Correction | Car Detailing in Tracy, CA",
@@ -38,8 +38,8 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Service service="paint correction" />
-      <FAQs service="paint correction" />
+      <Service information={Serviceinformation} service="paint correction" />
+      <FAQs information={FAQinformation} service="paint correction" />
     </>
   );
 }

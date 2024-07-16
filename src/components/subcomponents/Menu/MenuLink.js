@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Title from "../Text/Title";
 
-export default function MenuLink({ text, href, toggleShowMenu }) {
+export default function MenuLink({ text, href="/", toggleShowMenu }) {
   return (
     <Link
       href={href}

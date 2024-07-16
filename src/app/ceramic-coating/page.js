@@ -1,5 +1,7 @@
 import FAQs from "@/components/FAQs";
 import Service from "@/components/Service";
+import Serviceinformation from "../../components/subcomponents/Information/ServiceInformation";
+import FAQinformation from "../../components/subcomponents/Information/FAQInformation";
 
 export const metadata = {
   title: "Ceramic Coating | Car Detailing in Tracy, CA",
@@ -38,8 +40,8 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-        <Service service="ceramic coating" />
-        <FAQs service="ceramic coating" />
+        <Service information={Serviceinformation} service="ceramic coating" />
+        <FAQs information={FAQinformation} service="ceramic coating" />
     </>
   );
 }

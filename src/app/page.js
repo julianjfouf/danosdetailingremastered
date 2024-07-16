@@ -7,10 +7,7 @@ export const metadata = {
   description:
     "The official Dano's Detailing website for all the information you need about car detailing services and packages offered in Tracy, CA.",
   applicationName: "Dano's Detailing | Car Detailing in Tracy, CA",
-  keywords: [
-    "Car Detailing in Tracy",
-    "Car Cleaning in Tracy",
-  ],
+  keywords: ["Car Detailing in Tracy", "Car Cleaning in Tracy"],
   manifest: "https://danosdetailing.com/manifest.json",
   openGraph: {
     title: "Dano's Detailing | Car Detailing in Tracy, CA",

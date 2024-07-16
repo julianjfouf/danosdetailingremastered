@@ -1,46 +1,21 @@
 export default [
   {
-    title: "Services",
-    items: [
-      {
-        item: "Ceramic Coating",
-        href: "/ceramic-coating",
-        link: true,
-      },
-      {
-        item: "Paint Correction",
-        href: "/paint-correction",
-        link: true,
-      },
-      {
-        item: "Exterior Detailing",
-        href: "/exterior-detailing",
-        link: true,
-      },
-      {
-        item: "Interior Detailing",
-        href: "/interior-detailing",
-        link: true,
-      },
-    ],
-  },
-  {
     title: "Locations",
     items: [
       {
         item: "Tracy",
-        href: "",
-        link: false,
+        href: "/",
+        link: true,
       },
       {
         item: "Mountain House",
-        href: "",
-        link: false,
+        href: "/mountain-house",
+        link: true,
       },
       {
         item: "Lathrop",
-        href: "",
-        link: false,
+        href: "/lathrop",
+        link: true,
       },
     ],
   },

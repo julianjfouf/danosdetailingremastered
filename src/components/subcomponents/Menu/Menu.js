@@ -1,7 +1,17 @@
+import { useEffect, useState } from "react";
 import Paragraph from "../Text/Paragraph";
 import MenuLink from "./MenuLink";
 
-export default function Menu({ showMenu, toggleShowMenu }) {
+export default function Menu({
+  hrefs = [
+    "/ceramic-coating",
+    "/paint-correction",
+    "/exterior-detailing",
+    "/interior-detailing",
+  ],
+  showMenu,
+  toggleShowMenu,
+}) {
   return (
     <>
       <div
@@ -12,22 +22,22 @@ export default function Menu({ showMenu, toggleShowMenu }) {
         <div className="bg-white w-full h-[1px] mb-4"></div>
         <MenuLink
           text="Ceramic Coating"
-          href="/ceramic-coating"
+          href={hrefs[0]}
           toggleShowMenu={toggleShowMenu}
         />
         <MenuLink
           text="Paint Correction"
-          href="/paint-correction"
+          href={hrefs[1]}
           toggleShowMenu={toggleShowMenu}
         />
         <MenuLink
           text="Exterior Detailing"
-          href="/exterior-detailing"
+          href={hrefs[2]}
           toggleShowMenu={toggleShowMenu}
         />
         <MenuLink
           text="Interior Detailing"
-          href="/interior-detailing"
+          href={hrefs[3]}
           toggleShowMenu={toggleShowMenu}
         />
         <div className="bg-white w-full h-[1px] mt-4"></div>
