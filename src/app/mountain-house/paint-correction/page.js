@@ -1,7 +1,7 @@
 import FAQs from "@/components/FAQs";
 import Service from "@/components/Service";
-import Serviceinformation from "@/components/subcomponents/Information/LathropInformation/ServiceInformation";
-import FAQinformation from "@/components/subcomponents/Information/LathropInformation/FAQInformation";
+import Serviceinformation from "@/components/subcomponents/Information/MountainHouseInformation/ServiceInformation";
+import FAQinformation from "@/components/subcomponents/Information/MountainHouseInformation/FAQInformation";
 
 export const metadata = {
   title: "Paint Correction | Car Detailing in Mountain House, CA",
