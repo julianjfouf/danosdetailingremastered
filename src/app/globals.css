@@ -14,7 +14,6 @@
   animation-name: slideAnimation;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-direction:normal;
 }
 
 @keyframes slideAnimation {

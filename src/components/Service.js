@@ -9,17 +9,19 @@ export default function Service({ information, service }) {
         <div className="pl-2 flex flex-col gap-2 border-l-8 border-l-[#621f23]">
           <Title text={information[service]?.title} />
           <Paragraph text={information[service]?.description} />
-          <Paragraph
-            text={information[service]?.benefitsTitle}
-            args="font-medium"
-          />
-          <ul className="list-disc pl-8">
-            {information[service]?.benefits.map((benefit, id) => (
-              <li key={id}>
-                <Paragraph text={benefit} />
-              </li>
-            ))}
-          </ul>
+          <div className="hidden xl:flex flex-col gap-2">
+            <Paragraph
+              text={information[service]?.benefitsTitle}
+              args="font-medium"
+            />
+            <ul className="list-disc pl-8">
+              {information[service]?.benefits.map((benefit, id) => (
+                <li key={id}>
+                  <Paragraph text={benefit} />
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
       <div className="flex flex-col gap-6 xl:w-1/2">
